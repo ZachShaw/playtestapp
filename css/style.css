@@ -1,0 +1,509 @@
+/* ------ element styling  ------ */
+
+a {
+    text-transform: uppercase;
+}
+
+/* ------ row  ------ */
+
+.row {
+    margin-top: 20px;
+}
+
+/* ------ row  ------ */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* ------ hero  ------ */
+
+.hero {
+    display: block;
+    background-color: #ff4300;
+}
+
+/* ------ buttons ------ */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    float: right;
+    width: 87px;
+    height: 24px;
+    text-align: center;
+    padding: 3px 19px;
+    font-weight: 300;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.4s, border 0.4s, color 0.4s;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #006ed5;
+    border: 1px solid #006ed5;
+    color: #fff;
+    border-radius: 3px;
+    /*margin-right: 15px;*/
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #006ed5;
+    color: #006ed5
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #fff;
+    color: #ff3f00;
+}
+
+/* ------ progress bar section ------ */
+
+.progress {
+    display: inline-block;
+    float: right;
+    clear:both;
+    height: 11px;
+    width: 65%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+
+.progress-bar {
+    background-color: #df0000;
+}
+
+/* ------ profile section ------ */
+
+.profile-wrapper {
+    display: block;
+    width: 80%;
+    border: 0px solid #fff;
+    margin: 20px auto 30px auto;
+}
+
+.profile-pic {
+    display: inline-block;
+    border-radius: 200px;
+    border: 5px solid #ff6c3f;
+}
+
+.profile-pic img {
+    height: 105px;
+    width: 105px;
+}
+
+.profile-text {
+    display: inline-block;;
+    border: 0px solid #fff;
+    height: 120px;
+    width: 310px;
+    float: right; /* remove float in mobile view */
+    margin-top: 8px;
+}
+
+.profile-text h4, p {
+    color: #fff;
+}
+
+.profile-text p {
+    float: left;
+    font-weight: 100;
+    font-size: 11px;
+}
+
+.profile-text p:last-of-type {
+    float: right;
+}
+
+.profile-text .progress {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.profile-icons {
+    height: 18px;
+    width: 16px;
+    padding-bottom: 2px;
+    margin-right: 5px;
+}
+
+.profile-badges-wrapper {
+    display: inline-block;
+    border: 0px solid #fff;
+    height: 120px;
+    width: 100%;
+}
+
+.profile-badges-wrapper h5 {
+    display: inline-block;
+    color: #fff;
+}
+
+.profile-badges-wrapper a {
+    margin-top: 7px;
+}
+
+.profile-badge-icons {
+    margin-top: 15px;
+    height: 70px;
+    width: 100%;
+}
+
+.profile-badges-wrapper img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: 19px;
+
+}
+
+.profile-badges-wrapper img:first-of-type {
+    padding-left: 0px;
+}
+
+/* ------ skills section ------ */
+
+.skills-wrapper {
+    display: block;
+    width: 80%;
+    border: 0px solid #fff;
+    margin: 20px auto 30px auto;
+}
+
+.skills-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+.skills-text h4 {
+    display: inline-block;
+    margin-top: 18px;
+    color: #fff;
+}
+
+.skills-text a {
+    margin-top: 14px;
+}
+
+.skills-progress {
+    display: inline-block;
+    border: 0px solid #fff;
+    height: 205px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.skills-progress img {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.skills-progress p {
+    display: inline-block;
+    font-weight: lighter;
+}
+
+.skills-progress p {
+    display: inline-block;
+    font-weight: lighter;
+}
+
+/* ------ activity section ------ */
+
+.activity-wrapper {
+    display: block;
+    width: 100%;
+    border: 0px solid #333;
+    /*margin: 20px auto 30px auto;*/
+}
+
+.activity-title {
+    width: 95%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.activity-title h4 {
+    display: inline-block;
+}
+
+.activity-title .btn:link {
+    width: 110px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.activity-content {
+    margin-top: 20px;
+}
+
+.single-activity {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.activity-icons {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+.activity-text {
+    margin-left: 15px;
+    margin-top: 10px;
+    display: inline-block;
+    align-self: center;
+    width: 60%;
+}
+
+.activity-text p {
+    color: #333333;
+    /* decrease font-size when in mobile */
+}
+
+.activity-xp-box {
+    align-self: center;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-left: 40px;
+    height: 25px;
+    width: 80px;
+    border: 1px solid #009a48;
+    border-radius: 100px;
+    background-color: #009a48;
+    text-align: center;
+}
+
+.activity-xp {
+    color: #fff;
+    font-size: 12px;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+.activity-date-wrapper {
+    margin: 0 auto;
+    height: 25px;
+    width: 80px;
+    border: 1px solid #e6e6e6;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.activity-date {
+    color: #000000;
+    font-size: 12px;
+}
+
+/* ------ problems section ------ */
+
+.problems-wrapper {
+    display: block;
+    width: 100%;
+    border: 0px solid #333;
+    /*margin: 20px auto 30px auto;*/
+}
+
+.problems-title {
+    width: 95%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.problems-content {
+    display: flex;
+    height: 70px;
+}
+
+.problems-content p:first-child {
+    color: #000;
+}
+
+.problems-icon {
+    display: inline-block;
+    align-self: center;
+}
+
+.yellow-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color:#ced031;
+}
+
+.red-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color:#d73d44;
+}
+
+.problems-text {
+    display: inline-block;
+    align-self: center;
+    margin-left: 25px;
+    padding-top: 15px;
+}
+
+.days-remain {
+    font-style: italic;
+    color: #00b0a6;
+}
+
+.days-overdue {
+    font-style: italic;
+    color: #d5071f;
+}
+
+/* make debit amounts show up in red */
+.text-overdue p[data-monetary-amount^="-"]:after {
+  color: red;
+}
+
+/* ----- kudos ----- */
+
+.kudos-title {
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.kudos-title h4 {
+    display: inline-block;
+}
+
+.kudos-title .btn:link {
+    display: inline-block;
+    width: 110px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.kudos-wrapper {
+    height: 200px;
+    width: 100%;
+    border: 0px solid #000;
+}
+
+.kudos-stats {
+    display:inline-block;
+    height: 100%;
+    width: 49%;
+    border: 0px solid #ccc;
+}
+
+.kudos-stats:first-child {
+    border-right: 1px solid #f6f6f6;
+}
+
+.kudos-stats .week {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.kudos-stats .all-time {
+    margin-left: 20px;
+}
+
+.score {
+    float: right;
+    height: 73px;
+    width: 73px;
+    border-radius: 100px;
+}
+
+.score h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.blue {
+    background-color: #00b1a7;
+}
+
+.brown {
+    float: left;
+    background-color: #b49d56
+}
+
+.kudos-comments {
+    display: flex;
+}
+
+.comment-pic {
+    display: inline-block;
+    align-self: center;
+    border-radius: 200px;
+    border: 3px solid #ff6c3f;
+}
+
+.comment-pic img {
+    height: 55px;
+    width: 55px;
+}
+
+.comment-text {
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-text p {
+    color: #000000;
+}
+
+.comment-text p:last-of-type {
+    font-style: italic;
+}
